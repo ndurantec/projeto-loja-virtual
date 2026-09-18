@@ -1,6 +1,7 @@
 programa {
   funcao inicio() {
     
+    // primeira parte 012
     // Variaveis de controle de navegação
     inteiro opcao_menu_principal = -1
     inteiro opcao_crud = -1
@@ -28,6 +29,7 @@ programa {
     real valor_desconto = 0.0
     real valor_final = 0.0
 
+    // segunda parte 089
     // 1. LAÇO PRINCIPAL DO SISTEMA
     enquanto (opcao_menu_principal !=0){
       // Limpa a tela a cada iteração para manter o menu organizado
@@ -36,7 +38,19 @@ programa {
       escreva("=== BEM VINDO À NOSSA LOJA VIRTUAL ===")
 
       escreva("------------------------------------------")
-      escreva("MENU PRINCIPAL
+      escreva("MENU PRINCIPAL")
+         escreva("1. Ver Produtos e Adicionar ao carrinho (CREATE)")       
+         escreva("2. Ver meus itens no Carrinho (READ)")
+         escreva("3. Alterar Quantidade no Carrinho (UPDATE)")
+         escreva("4. Remover Item do Carrinho (DELETE)")
+         escreva("0. Finalizar Compra e ir ao Pagamento")
+         escreva("Escolha uma opção: ")
+         leia(opcao_menu_principal)
+
+         escolha (opcao_menu_principal) {
+              // =============================================
+              // C - CREATE (Adicionar Itens ao Carrinho)
+              // =============================================
 
 
   }
