@@ -2,6 +2,7 @@ programa {
   funcao inicio() {
     
     // primeira parte 012
+
     // Variaveis de controle de navegação
     inteiro opcao_menu_principal = -1
     inteiro opcao_crud = -1
@@ -30,8 +31,9 @@ programa {
     real valor_final = 0.0
 
     // segunda parte 089
+
     // 1. LAÇO PRINCIPAL DO SISTEMA
-    enquanto (opcao_menu_principal !=0){
+    enquanto (opcao_menu_principal !=0) {
       // Limpa a tela a cada iteração para manter o menu organizado
       limpa()
 
@@ -39,18 +41,35 @@ programa {
 
       escreva("------------------------------------------")
       escreva("MENU PRINCIPAL")
-         escreva("1. Ver Produtos e Adicionar ao carrinho (CREATE)")       
-         escreva("2. Ver meus itens no Carrinho (READ)")
-         escreva("3. Alterar Quantidade no Carrinho (UPDATE)")
-         escreva("4. Remover Item do Carrinho (DELETE)")
-         escreva("0. Finalizar Compra e ir ao Pagamento")
-         escreva("Escolha uma opção: ")
-         leia(opcao_menu_principal)
 
-         escolha (opcao_menu_principal) {
+      // terceira parte 021
+      escreva("1. Ver Produtos e Adicionar ao carrinho (CREATE)")       
+      escreva("2. Ver meus itens no Carrinho (READ)")
+      escreva("3. Alterar Quantidade no Carrinho (UPDATE)")
+      escreva("4. Remover Item do Carrinho (DELETE)")
+      escreva("0. Finalizar Compra e ir ao Pagamento")
+      escreva("Escolha uma opção: ")
+      leia(opcao_menu_principal)
+
+      escolha (opcao_menu_principal) {
               // =============================================
               // C - CREATE (Adicionar Itens ao Carrinho)
               // =============================================
+
+        caso 1:
+          limpa()
+          escreva("---CATALOGO DE PRODUTOS---")
+          escreva("1 camisa esportiva(estoque:", estoque_prod1 ") -R$ ", preco_")
+          escreva("2 bone casual         (estoque: ", estoque_prod2, ") -R$ ", preco_")
+          escreva("3 tenis de corrida (estoque: ", estoque_prod3, ") -R$ ", preco_")
+          escreva("escolha o produto que deseja adicionar:")
+          leia(opcao_crud)
+          escreva("digite a quantidade desejada:")
+          leia(quantidade_temp)
+          se (opcao_crud == 1) {
+            se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1) {
+
+
 
 
   }
